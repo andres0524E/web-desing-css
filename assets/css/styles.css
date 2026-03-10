@@ -33,13 +33,12 @@ body {
   z-index: 5;
 }
 
-/* NUEVO: aura de luz blanca al botón de compartir al activarse (hover) */
 .share-menu:hover .toggle {
   transform: rotate(360deg);
   box-shadow: 0 6px 8px rgba(0,0,0,0.15),
               0 0 0 2px #333,
               0 0 0 8px #fff,
-              0 0 20px 5px rgba(255, 255, 255, 0.6); /* aura */
+              0 0 20px 5px rgba(255, 255, 255, 0.6); 
 }
 
 .share-menu li {
@@ -130,9 +129,7 @@ body {
 
 .navigation ul li.active a .icon {
   transform: translateY(-32px);
-  color: #222327;
-  /* NUEVO: pequeña aura de luz azul al ícono del menú activo */
-  text-shadow: 0 0 10px rgba(0, 123, 255, 0.7); 
+  color: #007bff; /* ícono cambia a azul al seleccionarlo/pasar el cursor */
 }
 
 .navigation ul li a .text {
@@ -149,17 +146,18 @@ body {
 .navigation ul li.active a .text {
   opacity: 1;
   transform: translateY(10px);
+  color: #007bff; /* texto cambia a azul para combinar con el ícono */
 }
 
-/* burbuja azul indicadora */
+/* burbuja indicadora blanca */
 .indicator {
   position: absolute;
   top: -50%;
   width: 70px;
   height: 70px;
-  background: #007bff; 
+  background: #fff; 
   border-radius: 50%;
-  border: 6px solid #222327;
+  border: 6px solid #222327; 
   transition: 0.5s;
 }
 
